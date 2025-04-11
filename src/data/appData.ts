@@ -1,62 +1,69 @@
-import { FiBox, FiStar, FiZap } from "react-icons/fi";
+import { FiCpu, FiBook, FiZap ,FiHeart } from "react-icons/fi";
 import type { AppData } from "../types/app";
 import {
 	RiInstagramFill,
-	RiTelegram2Fill,
+	RiTiktokFill,
 	RiTwitterXFill,
 } from "react-icons/ri";
 
 export const appData: AppData = {
-	title: "Your App Name",
-	description:
-		"Here you can write a brief description of your application. Tell users about its main features and benefits in 1-2 sentences.",
+	title: "HolieMood",
+	description:"Discover Bible verses tailored to your emotions and life situations. Find divine guidance and comfort for every moment, whether you're feeling joyful, anxious, or seeking direction",
 	logo: {
-		type: "iframe",
-		src: "https://api.bohd4n.me/embed/3pzhXGJ7CAaBA3e/emoji1",
+		type: "image",
+		src: "/Light.png",
 	},
 	screenshots: {
 		iphone: [
-			"screenshots/iphone/1.png",
-			"screenshots/iphone/2.png",
-			"screenshots/iphone/3.png",
+			"screenshots/iphone/backgroundhome.png",
+			"screenshots/iphone/nobackgroundbibleguide.png",
+			"screenshots/iphone/nobackgroundjourney.png",
+			"screenshots/iphone/nobackgroundfav.png",
+			"screenshots/iphone/nobackgroundaichat.png"
 			// ...more Iphone screenshotsa
 		],
 		ipad: [
-			"screenshots/ipad/1.png",
-			"screenshots/ipad/2.png",
-			"screenshots/ipad/3.png",
+			"screenshots/ipad/ipad11home.png",
+			"screenshots/ipad/GuidanceIpad.png",
+			"screenshots/ipad/JourneyIpad.png",
+			"screenshots/ipad/FavIpad.png",
+			"screenshots/ipad/AiIpad.png"
 			// ...more iPad screenshots
 		],
 	},
 	features: [
 		{
-			title: "Main Feature",
-			description: "Describe your main feature here. What makes it special?",
-			icon: FiStar,
+			title: "Emotional Scripture Matching",
+      description: "Get personalized Bible verses that match your current emotional state, helping you find spiritual comfort and guidance when you need it most.",
+      icon: FiHeart,
 		},
 		{
-			title: "Another Feature",
-			description: "What else can your app do? Tell users about it here.",
-			icon: FiZap,
+			title: "AI-Powered Biblical Insights",
+      description: "Engage with an AI companion that provides deeper understanding of scriptures, answers faith-based questions, and offers spiritual guidance.",
+      icon: FiCpu,
 		},
 		{
-			title: "One More Feature",
-			description: "Add another key feature of your application here.",
-			icon: FiBox,
+			title: "Personal Study Tools",
+      description: "Save your favorite verses, track your emotional journey, and access study notes to deepen your understanding of scripture.",
+      icon: FiBook,
 		},
 	],
 	faqs: [
 		{
-			question: "Question 1?",
-			answer: "Answer to question 1 goes here.",
+			question: "Which Bible translations does HolieMood use?",
+			answer: "HolieMood offers three translations: King James Version (KJV), World English Bible (WEB), and American Standard Version (ASV). These translations are carefully chosen as they are in the public domain while maintaining accuracy and readability. You can easily switch between translations based on your preference.",
 		},
 		{
-			question: "Question 2?",
-			answer: "Answer to question 2 goes here.",
+			question: "How can I suggest new features or improvements for HolieMood?",
+            answer: "I value your input! You can submit your feature requests and suggestions through my dedicated feedback portal. I regularly review all feedback to make HolieMood better for the community.",
+            link: {
+							url: "https://insigh.to/b/holiemood-feature-request",
+							text: "Submit feature request"
+					}
 		},
 		{
-			question: "Question 3?",
-			answer: "Answer to question 3 goes here.",
+			question: "Is HolieMood free to use?",
+			answer: "The core features of HolieMood are completely free! This includes emotional scripture matching, verse saving, and mood tracking. For the AI-powered biblical insights feature, you get 5 free messages per day to help manage costs while still providing value. I believe in making spiritual guidance accessible while maintaining a sustainable service.",
 		},
 	],
 	storeLinks: {
@@ -65,17 +72,17 @@ export const appData: AppData = {
 	},
 	socialLinks: [
 		{
-			url: "#",
+			url: "https://www.instagram.com/holiemood?igsh=Yzd1NnF4ZGh0aWd1&utm_source=qr",
 			icon: RiInstagramFill,
 			label: "Instagram",
 		},
 		{
-			url: "#",
-			icon: RiTelegram2Fill,
-			label: "Telegram",
+			url: "https://www.tiktok.com/@holiemood",
+			icon: RiTiktokFill,
+			label: "TikTok",
 		},
 		{
-			url: "#",
+			url: "https://x.com/awuah_jesse",
 			icon: RiTwitterXFill,
 			label: "Twitter",
 		},

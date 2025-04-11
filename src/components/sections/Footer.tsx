@@ -5,10 +5,10 @@ const Footer: React.FC = () => {
 	return (
 		<footer className="py-8 text-center space-y-4 border-t border-white/5">
 			<div className="flex justify-center space-x-6 text-sm text-gray-400">
-				<a href="/privacy" className="transition-colors hover:text-white">
+				<a href="/privacy" className="transition-colors hover:text-black">
 					Privacy Policy
 				</a>
-				<a href="/terms" className="transition-colors hover:text-white">
+				<a href="/terms" className="transition-colors hover:text-black">
 					Terms of Service
 				</a>
 			</div>

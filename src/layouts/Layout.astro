@@ -17,7 +17,7 @@ const { showFooter = true } = Astro.props;
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/png" href="favicon.webp" />
+    <link rel="icon" type="image/png" href="faviconhm.png" />
     <meta property="og:title" content={title} />
     <meta property="og:type" content="website" />
     <meta property="og:url" content={Astro.url.href} />
@@ -38,8 +38,7 @@ const { showFooter = true } = Astro.props;
       });
     </script>
   </head>
-  <body class="bg-black font-sans text-white">
-    <GithubCorner href="https://github.com/bohd4nx/mobile-landing-page" />
+  <body class="bg-white font-sans text-black">
     <div class="mx-auto min-h-screen max-w-[800px]">
       <PageAnimation client:load>
         <main>

@@ -32,6 +32,16 @@ export default function FAQ({ items }: FAQProps) {
 							<div className="px-6 pb-6">
 								<div className="border-t border-white/5 pt-6">
 									<p className="text-gray-400">{item.answer}</p>
+									{item.link && (
+										<a
+											href={item.link.url}
+											target="_blank"
+											rel="noopener noreferrer"
+											className="mt-2 inline-block text-primary hover:underline"
+										>
+											{item.link.text}
+										</a>
+									)}
 								</div>
 							</div>
 						</details>

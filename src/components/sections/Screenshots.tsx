@@ -62,7 +62,7 @@ export default function Screenshots({ images }: ScreenshotsProps) {
 										className={`rounded-xl border border-white/10 object-cover ${
 											activeDevice === "iphone"
 												? "aspect-[9/16] w-[260px]"
-												: "aspect-[4/3] w-[360px]"
+												: "aspect-[4/3] w-[360px] h-[500px]"
 										}`}
 										loading="lazy"
 									/>

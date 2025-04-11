@@ -10,27 +10,19 @@ export default function AppHero({
 	return (
 		<div className="mb-16 flex flex-col md:flex-row gap-8">
 			<div className="flex-shrink-0 md:self-center">
-				<div className="rounded-2xl border border-white/10 bg-white/[0.03] p-6 w-[192px] h-[192px] flex items-center justify-center">
-					{logo.type === "iframe" ? (
-						<iframe
-							src={logo.src}
-							className="h-40 w-40 rounded-2xl border-0"
-							title="App Logo"
-						/>
-					) : (
-						<img
-							src={logo.src}
-							alt="App Icon"
-							className="h-40 w-40 rounded-2xl shadow-lg object-cover"
-						/>
-					)}
-				</div>
-			</div>
+        <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-6 w-[200px] h-[192px] flex items-center justify-center">
+            <img
+                src={logo.src}
+                alt="App Logo"
+                className="h-40 w-40 rounded-2xl shadow-lg object-cover"
+            />
+        </div>
+    </div>
 
 			<div className="flex flex-1 flex-col justify-between">
 				<div>
-					<h1 className="text-4xl font-bold text-white mb-3">{title}</h1>
-					<p className="text-lg text-gray-400 leading-relaxed mb-6 max-w-2xl">
+					<h1 className="text-4xl font-bold text-black mb-3">{title}</h1>
+					<p className="text-lg text-black leading-relaxed mb-6 max-w-2xl">
 						{description}
 					</p>
 				</div>
@@ -39,14 +31,14 @@ export default function AppHero({
 					<StoreButton
 						store="apple"
 						href={storeLinks.apple}
-						label="Download on the"
-						storeName="App Store"
+						label="Coming to"
+						storeName="App Store Soon"
 					/>
 					<StoreButton
 						store="google"
 						href={storeLinks.google}
-						label="Get it on"
-						storeName="Google Play"
+						label="Coming to"
+						storeName="Google Play Soon"
 					/>
 				</div>
 			</div>
@@ -76,7 +68,7 @@ function StoreButton({
 		>
 			<div className="flex items-center justify-center w-7 h-7">
 				<Icon
-					className={`text-gray-300 transition-transform duration-300 group-hover:scale-110 group-hover:text-white ${
+					className={`text-black transition-transform duration-300 group-hover:scale-110 group-hover:text-black ${
 						store === "apple" ? "w-[22px] h-[22px]" : "w-5 h-5"
 					}`}
 				/>
@@ -85,7 +77,7 @@ function StoreButton({
 				<div className="text-[11px] font-medium text-gray-400 group-hover:text-gray-300 transition-colors">
 					{label}
 				</div>
-				<div className="text-[13px] font-semibold tracking-wide text-white/90 group-hover:text-white transition-colors">
+				<div className="text-[13px] font-semibold tracking-wide text-gray-400 group-hover:text-black transition-colors">
 					{storeName}
 				</div>
 			</span>

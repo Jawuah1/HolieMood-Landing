@@ -18,29 +18,30 @@ const { title } = appData;
 
 <Layout title={`${title} · Privacy Policy`} description={`Privacy Policy for ${title} application - How we handle and protect your data`}>
   <main class="min-h-screen max-w-3xl mx-auto px-4 py-8">
-    <Breadcrumbs 
+    <Breadcrumbs
       items={[{ label: "Privacy Policy" }]}
     />
-    
+
     <div class="prose prose-invert prose-sm sm:prose-base max-w-none">
       <div set:html={htmlContent} />
     </div>
   </main>
-  
+
   <BackToTop client:load />
 </Layout>
 
 <style is:global>
   .prose {
-    --tw-prose-invert-headings: theme(colors.white);
+    --tw-prose-invert-headings: theme(colors.black);
     --tw-prose-invert-links: theme(colors.blue.400);
-    --tw-prose-invert-bold: theme(colors.white);
+    --tw-prose-invert-bold: theme(colors.black);
+    --tw-prose-invert-body: theme(colors.black);
   }
-  
+
   .prose a {
     text-decoration: none;
   }
-  
+
   .prose a:hover {
     text-decoration: underline;
   }
