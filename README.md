@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div align="center">
 
 # Mobile App Landing Page
@@ -89,3 +90,6 @@ MIT Licensed. See LICENSE file for details.
   </p>
   <p>Made with ❤️ by <a href="https://t.me/bohd4nx">Bohdan</a></p>
 </div>
+=======
+# HolieMood-Landing
+>>>>>>> 19fd31fbf0e3e19b241a81e9f809595b1ab1fdbc
