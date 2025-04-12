@@ -10,18 +10,23 @@ export default function AppHero({
 	return (
 		<div className="mb-16 flex flex-col md:flex-row gap-8">
 			<div className="flex-shrink-0 md:self-center">
-        <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-6 w-[200px] h-[192px] flex items-center justify-center">
+        {/* <div className="rounded-2xl border border-gray-400 bg-white/[0.03] p-6 w-[200px] h-[192px] flex items-center justify-center">
             <img
                 src={logo.src}
                 alt="App Logo"
-                className="h-40 w-40 rounded-2xl shadow-lg object-cover"
+                className="h-40 w-40 rounded-2xl  object-cover"
             />
-        </div>
+        </div> */}
     </div>
 
 			<div className="flex flex-1 flex-col justify-between">
 				<div>
-					<h1 className="text-4xl font-bold text-black mb-3">{title}</h1>
+					{/* <h1 className="text-4xl font-bold text-black mb-3">{title}</h1> */}
+					<img
+                src={logo.src}
+                alt="App Logo"
+                className="h-40 w-40 rounded-2xl object-cover mb-[-60px] ml-[-30px]"
+            />
 					<p className="text-lg text-black leading-relaxed mb-6 max-w-2xl">
 						{description}
 					</p>

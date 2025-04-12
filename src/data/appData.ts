@@ -11,7 +11,7 @@ export const appData: AppData = {
 	description:"Discover Bible verses tailored to your emotions and life situations. Find divine guidance and comfort for every moment, whether you're feeling joyful, anxious, or seeking direction",
 	logo: {
 		type: "image",
-		src: "/Light.png",
+		src: "/gradientText.png",
 	},
 	screenshots: {
 		iphone: [
