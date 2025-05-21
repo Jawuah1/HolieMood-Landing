@@ -9,12 +9,12 @@ export default function Screenshots({ images }: ScreenshotsProps) {
 
 	return (
 		<div className="mb-16">
-			<div className="mb-6 flex items-center justify-between">
-				<h2 className="text-2xl font-semibold">Screenshots</h2>
+			<div className="mb-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+				<h2 className="text-3xl font-bold text-center bg-gradient-to-r from-[#FF3131] to-[#FF914D] bg-clip-text text-transparent">Screenshots</h2>
 				<DeviceToggle activeDevice={activeDevice} onToggle={setActiveDevice} />
 			</div>
 			<div
-				className={`relative overflow-hidden ${activeDevice === "iphone" ? "min-h-[400px]" : "min-h-[300px]"}`}
+				className={`relative overflow-hidden rounded-2xl bg-white p-6 shadow-lg ${activeDevice === "iphone" ? "min-h-[400px]" : "min-h-[300px]"}`}
 			>
 				<AnimatePresence mode="wait">
 					<motion.div
@@ -41,7 +41,7 @@ export default function Screenshots({ images }: ScreenshotsProps) {
 							}
 						}}
 					>
-						<div className="flex gap-6 pb-4">
+						<div className="flex gap-8 pb-4">
 							{currentImages.map((image, index) => (
 								<motion.button
 									key={image}
@@ -54,12 +54,12 @@ export default function Screenshots({ images }: ScreenshotsProps) {
 									exit={{ opacity: 0, y: 20 }}
 									type="button"
 									onClick={() => window.openLightbox?.(index, activeDevice)}
-									className="relative flex-shrink-0 overflow-hidden rounded-xl focus:outline-none"
+									className="relative flex-shrink-0 overflow-hidden rounded-xl focus:outline-none transform transition-transform duration-300 hover:scale-105"
 								>
 									<img
 										src={image}
 										alt={`Screenshot ${index + 1}`}
-										className={`rounded-xl border border-white/10 object-cover ${
+										className={`rounded-xl border border-gray-200 object-cover shadow-md ${
 											activeDevice === "iphone"
 												? "aspect-[9/16] w-[260px]"
 												: "aspect-[4/3] w-[360px] h-[500px]"
