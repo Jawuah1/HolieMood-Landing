@@ -30,6 +30,7 @@ const { showFooter = true } = Astro.props;
       )
     }
     <meta name="theme-color" content="#000000" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <title>{title}</title>
     <script>
       history.scrollRestoration = "manual";
@@ -38,7 +39,7 @@ const { showFooter = true } = Astro.props;
       });
     </script>
   </head>
-  <body class="bg-white font-sans text-black">
+  <body class="bg-white font-montserrat text-black">
     <div class="mx-auto min-h-screen max-w-[800px]">
       <PageAnimation client:load>
         <main>
