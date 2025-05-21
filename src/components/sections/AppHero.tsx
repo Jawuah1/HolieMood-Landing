@@ -42,25 +42,25 @@ export default function AppHero({
 	logo,
 }: AppHeroProps) {
 	return (
-		<div className="mb-16 relative overflow-hidden">
-			{/* Subtle background pattern with enhanced styling */}
-			<div className="absolute inset-0 bg-gradient-to-br from-white to-gray-50 opacity-80 rounded-2xl -z-10" />
-			<div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiMyMjIiIGZpbGwtb3BhY2l0eT0iMC4wMyI+PHBhdGggZD0iTTM2IDM0djZoNnYtNmgtNnptNiA2djZoLTZ2LTZoNnptLTYtNnYtNmg2djZoLTZ6Ii8+PC9nPjwvZz48L3N2Zz4=')] opacity-25 -z-10" />
-			<div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#FF3131] to-[#FF914D] opacity-70" />
+		<div className="mb-16 relative overflow-hidden group">
+			{/* Enhanced background styling with multiple layers */}
+			<div className="absolute inset-0 bg-gradient-to-br from-white via-gray-50 to-white opacity-90 rounded-2xl -z-10" />
+			<div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiMyMjIiIGZpbGwtb3BhY2l0eT0iMC4wMyI+PHBhdGggZD0iTTM2IDM0djZoNnYtNmgtNnptNiA2djZoLTZ2LTZoNnptLTYtNnYtNmg2djZoLTZ6Ii8+PC9nPjwvZz48L3N2Zz4=')] opacity-20 -z-10 transform scale-75 rotate-12 group-hover:rotate-0 transition-transform duration-700" />
+			<div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-[#FF3131] via-[#FF914D] to-[#FF3131] opacity-80 animate-gradient" />
 
-			<div className="flex flex-col md:flex-row gap-6 p-6 md:p-10 rounded-2xl">
+			<div className="flex flex-col md:flex-row gap-6 p-8 md:p-12 rounded-2xl">
 				<div className="flex flex-1 flex-col justify-between">
-					<div className="animate-fadeIn">
+					<div className="animate-fadeIn space-y-6">
 						<h1
-							className="text-[2.5rem] sm:text-[3rem] md:text-[4rem] font-extrabold mb-6 md:mb-8 bg-gradient-to-r from-[#FF3131] to-[#FF914D] bg-clip-text text-transparent hover:scale-[1.02] transition-transform duration-300 animate-gradient animate-slideIn"
+							className="text-[2.75rem] sm:text-[3.25rem] md:text-[4.5rem] font-black mb-4 md:mb-6 bg-gradient-to-r from-[#FF3131] via-[#FF914D] to-[#FF3131] bg-clip-text text-transparent hover:scale-[1.02] transition-all duration-500 animate-gradient animate-slideIn tracking-tight"
 							style={{
-								textShadow: '0 1px 2px rgba(0,0,0,0.05)',
-								letterSpacing: '-0.02em'
+								textShadow: '0 2px 4px rgba(0,0,0,0.08)',
+								letterSpacing: '-0.03em'
 							}}
 						>
 							HolieMood
 						</h1>
-						<p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-6 md:mb-8 max-w-2xl font-medium animate-fadeIn" style={{ animationDelay: '0.2s' }}>
+						<p className="text-base sm:text-lg text-gray-700 leading-relaxed mb-8 md:mb-10 max-w-2xl font-medium animate-fadeIn prose prose-lg prose-gray" style={{ animationDelay: '0.3s' }}>
 							{description}
 						</p>
 					</div>
