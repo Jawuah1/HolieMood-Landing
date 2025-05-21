@@ -24,7 +24,7 @@ export default function Waitlist({ title = 'Join the Waitlist' }: WaitlistProps)
         </p>
 
         <form
-          action="https://formsubmit.co/holiemood@gmail.com"
+          action={`https://formsubmit.co/${import.meta.env.FORMSUBMIT_KEY}`}
           method="POST"
           className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto"
         >
