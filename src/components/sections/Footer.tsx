@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
 			<div className="text-sm text-gray-500">
 				<p>
 					&copy; {new Date().getFullYear()}{" "}
-					<span className="text-gray-400">{appData.title}</span>
+					<span className="text-gray-400">{appData.title} A product of Awuah Labs LLC</span>
 					<br />
 					All rights reserved.
 				</p>
