@@ -15,7 +15,7 @@ export const appData: AppData = {
 	},
 	screenshots: {
 		iphone: [
-			"screenshots/iphone/HomePhotoroom.png",
+			"screenshots/iphone/home.png",
 			"screenshots/iphone/emotion.png",
 			"screenshots/iphone/guide.png",
 			"screenshots/iphone/bibleai.png",
