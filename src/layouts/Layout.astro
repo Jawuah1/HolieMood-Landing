@@ -1,6 +1,7 @@
 ---
 import PageAnimation from "@components/ui/PageAnimation";
 import Footer from "@components/sections/Footer";
+import Header from "@components/sections/Header";
 import GithubCorner from "@components/ui/GithubCorner";
 export interface Props {
 	title: string;
@@ -41,6 +42,7 @@ const { showFooter = true } = Astro.props;
   </head>
   <body class="bg-white font-montserrat text-black">
     <div class="mx-auto min-h-screen max-w-[800px]">
+      <Header />
       <PageAnimation client:load>
         <main>
           <slot />
