@@ -80,6 +80,6 @@ Service provided "as is" without warranties of:
 
 For support or legal inquiries:
 
-- Email: legal@example.com
-- Address: 123 Tech Street, Suite 100
-- Phone: (555) 123-4567
+- Email: support@holiemood.com
+- Address: 522 W Riverside Ave Ste N, Spokane, WA
+- Phone: (206) 486-2230
