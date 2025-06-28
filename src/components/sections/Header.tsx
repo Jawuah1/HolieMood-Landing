@@ -14,18 +14,30 @@ const Header: React.FC = () => {
 				</div>
 
 				{/* Navigation Links */}
-				<nav className="flex items-center space-x-6 text-sm text-gray-700">
-					<a
-						href="/privacy"
+				<nav className="flex items-center space-x-4 md:space-x-6 text-sm text-gray-700">
+					<a 
+						href="/privacy" 
 						className="transition-colors hover:text-black hover:underline underline-offset-4"
 					>
 						Privacy Policy
 					</a>
-					<a
-						href="/terms"
+					<a 
+						href="/terms" 
 						className="transition-colors hover:text-black hover:underline underline-offset-4"
 					>
 						Terms of Service
+					</a>
+					<a 
+						href="/delete-data" 
+						className="text-blue-600 hover:text-blue-700 transition-colors font-medium"
+					>
+						Delete Data
+					</a>
+					<a 
+						href="/delete-account" 
+						className="text-red-600 hover:text-red-700 transition-colors font-medium"
+					>
+						Delete Account
 					</a>
 				</nav>
 			</div>

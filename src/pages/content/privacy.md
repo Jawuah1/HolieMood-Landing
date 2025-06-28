@@ -88,6 +88,24 @@ You have the right to:
 - **Restrict processing**: Request that we restrict the processing of your personal data
 - **Object to processing**: Object to our processing of your personal data
 
+## Account and Data Deletion
+
+You have the right to request deletion of your data or your entire account:
+
+### Data Deletion (Keep Account Active)
+- Visit our [Delete Data](/delete-data) page for detailed instructions
+- Email us at support@holiemood.com with your data deletion request
+- Specify which types of data you want deleted while keeping your account active
+- Your account remains functional for future use
+
+### Complete Account Deletion
+- Visit our [Delete Account](/delete-account) page for detailed instructions
+- Email us at support@holiemood.com with your account deletion request
+- Include your account email address and confirm your identity
+- Your entire account and all associated data will be permanently deleted
+
+Both processes are permanent and cannot be undone once completed.
+
 ## Children's Privacy
 
 Our Service does not address anyone under the age of 13. We do not knowingly collect personally identifiable information from anyone under the age of 13. If You are a parent or guardian and You are aware that Your child has provided Us with Personal Data, please contact Us.
