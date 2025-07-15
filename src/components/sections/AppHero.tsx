@@ -68,15 +68,15 @@ export default function AppHero({
 					<div className="flex flex-col sm:flex-row gap-3 sm:gap-4 animate-fadeIn" style={{ animationDelay: '0.4s' }}>
 						<StoreButton
 							store="apple"
-							href={storeLinks.apple}
-							label="Coming to"
-							storeName="App Store Soon"
+							href="https://apps.apple.com/us/app/holiemood/id6744375696"
+							label="Out Now"
+							storeName="App Store"
 						/>
 						<StoreButton
 							store="google"
-							href={storeLinks.google}
-							label="Coming to"
-							storeName="Google Play Soon"
+							href="https://play.google.com/store/apps/details?id=com.jesseawuah.readmeapp"
+							label="Out Now"
+							storeName="Google Play"
 						/>
 					</div>
 				</div>

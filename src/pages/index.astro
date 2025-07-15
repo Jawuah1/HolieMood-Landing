@@ -6,7 +6,7 @@ import Features from "@components/sections/Features";
 import FAQ from "@components/sections/FAQ";
 import Lightbox from "@components/ui/Lightbox";
 import SocialLinks from "@components/social/SocialLinks";
-import Waitlist from "@components/sections/Waitlist";
+// import Waitlist from "@components/sections/Waitlist"; // Removed since app is now available
 import { appData } from "../data/appData";
 
 const {
@@ -25,7 +25,7 @@ const {
   <main class="min-h-screen max-w-5xl mx-auto px-4 py-8">
     <AppHero title={title} description={description} storeLinks={storeLinks} logo={logo} />
 
-    <Waitlist client:load />
+    {/* <Waitlist client:load /> */} {/* Removed since app is now available */}
 
     <div class="mb-16">
       <Screenshots images={screenshots} client:load />
