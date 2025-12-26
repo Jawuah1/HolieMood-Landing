@@ -1,4 +1,4 @@
-import { FiCpu, FiBook, FiZap ,FiHeart } from "react-icons/fi";
+import { FiCpu, FiBook, FiZap ,FiHeart, FiWind, FiHeadphones } from "react-icons/fi";
 import type { AppData } from "../types/app";
 import {
 	RiInstagramFill,
@@ -8,7 +8,7 @@ import {
 
 export const appData: AppData = {
 	title: "HolieMood",
-	description:"Discover Bible verses tailored to your emotions and life situations. Find divine guidance and comfort for every moment, whether you're feeling joyful, anxious, or seeking direction",
+	description:"Discover Bible verses tailored to your emotions and life situations. Find divine guidance and comfort for every moment. Version 2.0 coming soon with Guided Breathwork and Audio Scriptures.",
 	logo: {
 		type: "image",
 		src: "/gradientText.png",
@@ -39,6 +39,16 @@ export const appData: AppData = {
       icon: FiHeart,
 		},
 		{
+			title: "Guided Breathwork",
+      description: "Calm your mind and spirit with our new guided breathwork sessions, designed to help you center yourself and connect with God.",
+      icon: FiWind,
+		},
+		{
+			title: "Immersive Audio Bible",
+      description: "Listen to the Word with enhanced audio quality. Now featuring the Berean Standard Bible (BSB) with full audio support for a deeper experience.",
+      icon: FiHeadphones,
+		},
+		{
 			title: "AI-Powered Biblical Insights",
       description: "Engage with an AI companion that provides deeper understanding of scriptures, answers faith-based questions, and offers spiritual guidance.",
       icon: FiCpu,
@@ -52,7 +62,11 @@ export const appData: AppData = {
 	faqs: [
 		{
 			question: "Which Bible translations does HolieMood use?",
-			answer: "HolieMood offers three translations: King James Version (KJV), World English Bible (WEB), and American Standard Version (ASV). These translations are carefully chosen as they are in the public domain while maintaining accuracy and readability. You can easily switch between translations based on your preference.",
+			answer: "HolieMood now features the Berean Standard Bible (BSB) with full audio support! We also offer King James Version (KJV), World English Bible (WEB), and American Standard Version (ASV). You can easily switch between translations based on your preference.",
+		},
+		{
+			question: "What is included in Version 2.0?",
+            answer: "Version 2.0 introduces Guided Breathwork to help you meditate and relax, enhanced audio quality for all verses, and the addition of the Berean Standard Bible (BSB) with complete audio support.",
 		},
 		{
 			question: "How can I suggest new features or improvements for HolieMood?",
@@ -64,7 +78,7 @@ export const appData: AppData = {
 		},
 		{
 			question: "Is HolieMood free to use?",
-			answer: "The core features of HolieMood are completely free! This includes emotional scripture matching, verse saving, and mood tracking. For the AI-powered biblical insights feature, you get 5 free messages per day to help manage costs while still providing value. I believe in making spiritual guidance accessible while maintaining a sustainable service.",
+			answer: "The core features of HolieMood are completely free! This includes emotional scripture matching, verse saving, mood tracking, and the new breathwork tools. For the AI-powered biblical insights feature, you get a limited number of free messages per day.",
 		},
 	],
 	storeLinks: {

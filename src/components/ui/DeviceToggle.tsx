@@ -10,45 +10,30 @@ export default function DeviceToggle({
 	onToggle,
 }: DeviceToggleProps) {
 	return (
-		<div className="flex items-center justify-center gap-1.5 rounded-lg border border-black/10 bg-black/[0.03] p-1">
-			<motion.button
-				type="button"
-				onClick={() => onToggle("iphone")}
-				className={`relative rounded-md px-3.5 py-1.5 text-sm transition-colors ${
-					activeDevice === "iphone"
-						? "text-gray-600"
-						: "text-gray-500 hover:text-black"
-				}`}
-				whileTap={{ scale: 0.95 }}
-			>
-				{activeDevice === "iphone" && (
-					<motion.div
-						layoutId="activeDevice"
-						className="absolute inset-0 rounded-md bg-white/10"
-						transition={{ type: "spring", bounce: 0.15, duration: 0.5 }}
-					/>
-				)}
-				<span className="relative z-10">Phone</span>
-			</motion.button>
-			<motion.button
-				type="button"
-				onClick={() => onToggle("ipad")}
-				className={`relative rounded-md px-3.5 py-1.5 text-sm transition-colors ${
-					activeDevice === "ipad"
-						? "text-gray-600"
-						: "text-gray-500 hover:text-black"
-				}`}
-				whileTap={{ scale: 0.95 }}
-			>
-				{activeDevice === "ipad" && (
-					<motion.div
-						layoutId="activeDevice"
-						className="absolute inset-0 rounded-md bg-white/10"
-						transition={{ type: "spring", bounce: 0.15, duration: 0.5 }}
-					/>
-				)}
-				<span className="relative z-10">Tablet</span>
-			</motion.button>
+		<div className="flex items-center justify-center gap-1 p-1 rounded-xl bg-gray-100 border border-gray-200">
+			{(["iphone", "ipad"] as const).map((device) => (
+				<motion.button
+					key={device}
+					type="button"
+					onClick={() => onToggle(device)}
+					className={`relative rounded-lg px-4 py-2 text-sm font-semibold transition-colors z-10 ${
+						activeDevice === device
+							? "text-brand-dark"
+							: "text-gray-500 hover:text-gray-700"
+					}`}
+					whileTap={{ scale: 0.95 }}
+				>
+					{activeDevice === device && (
+						<motion.div
+							layoutId="activeDevice"
+							className="absolute inset-0 rounded-lg bg-white shadow-sm border border-gray-200"
+							transition={{ type: "spring", bounce: 0.15, duration: 0.5 }}
+							style={{ zIndex: -1 }}
+						/>
+					)}
+					<span className="relative z-10 capitalize">{device === "iphone" ? "Phone" : "Tablet"}</span>
+				</motion.button>
+			))}
 		</div>
 	);
 }

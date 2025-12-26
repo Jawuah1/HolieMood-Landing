@@ -3,11 +3,11 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Delete Account - HolieMood" description="Request account deletion for your HolieMood account">
-	<div class="min-h-screen bg-gradient-to-br from-white via-gray-50 to-white py-16 px-6">
+	<main class="min-h-screen py-24 px-6">
 		<div class="max-w-2xl mx-auto">
 			<!-- Header -->
-			<div class="text-center mb-12">
-				<h1 class="text-3xl md:text-4xl font-bold bg-gradient-to-r from-[#FF3131] via-[#FF914D] to-[#FF3131] bg-clip-text text-transparent mb-4">
+			<div class="text-center mb-16">
+				<h1 class="text-3xl md:text-4xl font-black text-brand-dark mb-4 tracking-tight">
 					Delete Your Account
 				</h1>
 				<p class="text-gray-600 text-lg">
@@ -16,30 +16,30 @@ import Layout from "../layouts/Layout.astro";
 			</div>
 
 			<!-- Main Content -->
-			<div class="bg-white rounded-2xl shadow-lg border border-gray-100 p-8 mb-8">
-				<div class="space-y-6">
-					<div class="flex items-start space-x-4">
-						<div class="flex-shrink-0 w-8 h-8 bg-gradient-to-r from-[#FF3131] to-[#FF914D] rounded-full flex items-center justify-center text-white font-bold text-sm">
+			<div class="bg-white rounded-3xl shadow-sm border border-gray-100 p-8 md:p-12 mb-8">
+				<div class="space-y-8">
+					<div class="flex items-start space-x-6">
+						<div class="flex-shrink-0 w-10 h-10 bg-brand-light rounded-xl flex items-center justify-center text-brand-primary font-bold text-lg border border-brand-primary/10">
 							1
 						</div>
 						<div>
-							<h3 class="font-semibold text-gray-900 mb-2">Send an Email Request</h3>
-							<p class="text-gray-600">
+							<h3 class="font-bold text-brand-dark text-lg mb-2">Send an Email Request</h3>
+							<p class="text-gray-600 leading-relaxed">
 								To delete your HolieMood account, please send an email to our support team with your account deletion request.
 							</p>
 						</div>
 					</div>
 
-					<div class="flex items-start space-x-4">
-						<div class="flex-shrink-0 w-8 h-8 bg-gradient-to-r from-[#FF3131] to-[#FF914D] rounded-full flex items-center justify-center text-white font-bold text-sm">
+					<div class="flex items-start space-x-6">
+						<div class="flex-shrink-0 w-10 h-10 bg-brand-light rounded-xl flex items-center justify-center text-brand-primary font-bold text-lg border border-brand-primary/10">
 							2
 						</div>
 						<div>
-							<h3 class="font-semibold text-gray-900 mb-2">Include Required Information</h3>
-							<p class="text-gray-600 mb-3">
+							<h3 class="font-bold text-brand-dark text-lg mb-2">Include Required Information</h3>
+							<p class="text-gray-600 mb-4">
 								Please include the following information in your email:
 							</p>
-							<ul class="list-disc list-inside text-gray-600 space-y-1 ml-4">
+							<ul class="list-disc list-inside text-gray-600 space-y-2 ml-2 marker:text-brand-primary">
 								<li>The email address associated with your HolieMood account</li>
 								<li>Confirmation that you want to permanently delete your account</li>
 								<li>Any specific reason for deletion (optional)</li>
@@ -47,13 +47,13 @@ import Layout from "../layouts/Layout.astro";
 						</div>
 					</div>
 
-					<div class="flex items-start space-x-4">
-						<div class="flex-shrink-0 w-8 h-8 bg-gradient-to-r from-[#FF3131] to-[#FF914D] rounded-full flex items-center justify-center text-white font-bold text-sm">
+					<div class="flex items-start space-x-6">
+						<div class="flex-shrink-0 w-10 h-10 bg-brand-light rounded-xl flex items-center justify-center text-brand-primary font-bold text-lg border border-brand-primary/10">
 							3
 						</div>
 						<div>
-							<h3 class="font-semibold text-gray-900 mb-2">Wait for Confirmation</h3>
-							<p class="text-gray-600">
+							<h3 class="font-bold text-brand-dark text-lg mb-2">Wait for Confirmation</h3>
+							<p class="text-gray-600 leading-relaxed">
 								Our support team will process your request within 5-7 business days and send you a confirmation email once your account has been deleted.
 							</p>
 						</div>
@@ -62,16 +62,18 @@ import Layout from "../layouts/Layout.astro";
 			</div>
 
 			<!-- Contact Information -->
-			<div class="bg-gradient-to-r from-[#FF3131]/5 via-[#FF914D]/5 to-[#FF3131]/5 rounded-2xl border border-orange-100 p-6 text-center">
-				<h3 class="font-semibold text-gray-900 mb-3">Contact Support</h3>
-				<p class="text-gray-600 mb-4">
+			<div class="bg-brand-dark text-white rounded-3xl p-8 text-center mb-8 relative overflow-hidden">
+				<div class="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
+				
+				<h3 class="font-bold text-xl mb-4 relative z-10">Contact Support</h3>
+				<p class="text-gray-300 mb-8 relative z-10">
 					Send your account deletion request to:
 				</p>
 				<a 
 					href="mailto:support@holiemood.com?subject=Account Deletion Request" 
-					class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-[#FF3131] to-[#FF914D] text-white font-semibold rounded-lg hover:shadow-lg transition-all duration-300 hover:scale-105"
+					class="inline-flex items-center px-8 py-4 bg-white text-brand-dark font-bold rounded-xl hover:bg-gray-50 transition-all duration-300 hover:scale-105 shadow-lg relative z-10"
 				>
-					<svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+					<svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
 					</svg>
 					support@holiemood.com
@@ -79,14 +81,14 @@ import Layout from "../layouts/Layout.astro";
 			</div>
 
 			<!-- Important Notice -->
-			<div class="bg-yellow-50 border border-yellow-200 rounded-lg p-4 mt-8">
+			<div class="bg-red-50 border border-red-100 rounded-2xl p-6">
 				<div class="flex items-start">
-					<svg class="w-5 h-5 text-yellow-600 mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+					<svg class="w-6 h-6 text-red-500 mt-0.5 mr-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16c-.77.833.192 2.5 1.732 2.5z"></path>
 					</svg>
 					<div>
-						<h4 class="font-semibold text-yellow-800 mb-1">Important Notice</h4>
-						<p class="text-yellow-700 text-sm">
+						<h4 class="font-bold text-red-900 mb-2">Important Notice</h4>
+						<p class="text-red-700 text-sm leading-relaxed">
 							Account deletion is permanent and cannot be undone. All your data, including saved verses, journey entries, and preferences will be permanently removed from our servers.
 						</p>
 					</div>
@@ -94,10 +96,10 @@ import Layout from "../layouts/Layout.astro";
 			</div>
 
 			<!-- Back to Home -->
-			<div class="text-center mt-8">
+			<div class="text-center mt-12">
 				<a 
 					href="/" 
-					class="inline-flex items-center text-gray-600 hover:text-gray-900 transition-colors"
+					class="inline-flex items-center text-gray-500 hover:text-brand-primary transition-colors font-medium"
 				>
 					<svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
@@ -106,5 +108,5 @@ import Layout from "../layouts/Layout.astro";
 				</a>
 			</div>
 		</div>
-	</div>
+	</main>
 </Layout>
