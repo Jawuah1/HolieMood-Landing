@@ -82,8 +82,8 @@ export const appData: AppData = {
 		},
 	],
 	storeLinks: {
-		apple: "#", // Replace with your App Store link
-		google: "#", // Replace with your Google Play link
+		apple: "https://apps.apple.com/us/app/holiemood/id6744375696",
+		google: "https://play.google.com/store/apps/details?id=com.jesseawuah.readmeapp",
 	},
 	socialLinks: [
 		{
