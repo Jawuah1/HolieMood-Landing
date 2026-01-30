@@ -28,11 +28,11 @@ export default function Features({ features }: FeaturesProps) {
 									<div className="mb-6 inline-flex p-4 rounded-2xl bg-brand-light group-hover:bg-white transition-colors duration-300 shadow-sm group-hover:shadow-md">
 										<Icon className="h-8 w-8 text-brand-primary group-hover:scale-110 transition-transform duration-300" />
 									</div>
-
+									
 									<h3 className="text-xl font-bold text-brand-dark mb-3 tracking-tight">
 										{feature.title}
 									</h3>
-
+									
 									<p className="text-gray-600 leading-relaxed font-medium">
 										{feature.description}
 									</p>

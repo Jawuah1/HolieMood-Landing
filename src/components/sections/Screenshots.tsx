@@ -23,7 +23,7 @@ export default function Screenshots({ images }: ScreenshotsProps) {
 					{/* Tablet toggle temporarily hidden */}
 					{/* <DeviceToggle activeDevice={activeDevice} onToggle={setActiveDevice} /> */}
 				</div>
-
+				
 				<div
 					className={`relative ${activeDevice === "iphone" ? "min-h-[400px]" : "min-h-[300px]"}`}
 				>

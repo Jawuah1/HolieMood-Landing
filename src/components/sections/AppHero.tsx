@@ -32,7 +32,7 @@ export default function AppHero({
 				{/* Badge/Pill */}
 				<div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/50 backdrop-blur-md border border-white/60 shadow-sm mb-8 animate-fadeIn hover:scale-105 transition-transform duration-300 cursor-default">
 					<span className="flex h-2 w-2 rounded-full bg-brand-primary animate-pulse"></span>
-					<span className="text-sm font-semibold text-gray-600 tracking-wide uppercase">Version 2.0 Coming Soon</span>
+					<span className="text-sm font-semibold text-gray-600 tracking-wide uppercase">Version 2.0 Out Now!</span>
 				</div>
 
 				{/* Main Title */}
