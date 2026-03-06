@@ -8,20 +8,19 @@ import {
 
 export const appData: AppData = {
 	title: "HolieMood",
-	description:"Discover Bible verses tailored to your emotions and life situations. Find divine guidance and comfort for every moment. Version 2.0 coming soon with Guided Breathwork and Audio Scriptures.",
+	description:"Discover Bible verses tailored to your emotions and life situations. Find divine guidance and comfort for every moment. Version 2.0 is here with Guided Breathwork and Audio Scriptures.",
 	logo: {
 		type: "image",
 		src: "/gradientText.png",
 	},
 	screenshots: {
 		iphone: [
-			"screenshots/iphone/home.png",
-			"screenshots/iphone/emotion.png",
-			"screenshots/iphone/guide.png",
-			"screenshots/iphone/bibleai.png",
-			"screenshots/iphone/journey.png",
-			"screenshots/iphone/fav.png",
-			// ...more Iphone screenshotsa
+			"screenshots/iphone/PadSnap_images/screenshot-1-App Screenshot_square.png",
+			"screenshots/iphone/PadSnap_images/screenshot-2-Hanged Up_square.png",
+			"screenshots/iphone/PadSnap_images/screenshot-3-App Screenshot_square.png",
+			"screenshots/iphone/PadSnap_images/screenshot-4-Hanged Up_square.png",
+			"screenshots/iphone/PadSnap_images/screenshot-5-App Screenshot_square.png",
+			"screenshots/iphone/PadSnap_images/screenshot-6-App Screenshot_square.png",
 		],
 		ipad: [
 			"screenshots/ipad/ipad11home.png",
